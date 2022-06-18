@@ -1,0 +1,29 @@
+<div id="teste">
+    <mat-card class="log">
+        <mat-card-title class="title">Assistente Virtual</mat-card-title>
+        <form>
+
+            <span>
+                Olá, 
+                Eu sou o Edu, o seu atendente virtual. 🎓
+                Quero te ajudar do melhor jeito.
+                </span>
+                <div class="contEdu">
+                <img class="edu" src="/assets/edu.png" alt="">
+            </div>
+            
+                <div class="envPerg">
+                <mat-form-field class="duvida">
+                    <input type="text" matInput placeholder="Ditige aqui sua pergunta" id="pergunta edu">
+                </mat-form-field><button class="enviar" mat-raised-button color="primary">
+                    Enviar
+                </button>
+                </div>
+
+            
+            <button class="voltar" routerLink="/menu" mat-raised-button (click)="voltar()" color="warn">
+                Voltar
+            </button>
+        </form>
+    </mat-card>
+</div>

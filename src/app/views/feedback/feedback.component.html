@@ -1,0 +1,44 @@
+<div id="teste">
+    <mat-card class="log">
+        <mat-card-title class="title">Feedback</mat-card-title>
+        <form>
+
+            <span></span>
+            <mat-form-field>
+                <input matInput placeholder="Como você se sente em relação ao que sentia anteriormente?" id="sent">
+            </mat-form-field>
+
+            <span>Selecione a seguir as orientações que você recebeu sobre o pós operatório?</span>
+            <div class="pergunta">
+                <mat-checkbox class="check">Repouso
+                </mat-checkbox>
+                <mat-checkbox class="check">Retorno ao médico
+                </mat-checkbox>
+                <mat-checkbox class="check">Dieta Alimentar
+                </mat-checkbox>
+                <mat-checkbox class="check">Uso de medimentos
+                </mat-checkbox>
+            </div>
+
+            <span>Você teve alguma dificuldade de utilizar os medicamentos pós cirúrgicos?</span>
+            <div class="pergunta">
+                <mat-checkbox class="check">Sim
+                </mat-checkbox>
+                <mat-checkbox class="check">Não
+                </mat-checkbox>
+            </div>
+        
+            <span></span>
+            <mat-form-field>
+                <input matInput placeholder="Sugestões:" id="obs">
+            </mat-form-field>
+            
+            <button routerLink="/menu" mat-raised-button (click)="voltar()" color="primary">
+                Salvar
+            </button>
+            <button class="voltar" routerLink="/menu" mat-raised-button (click)="voltar()" color="warn">
+                Voltar
+            </button>
+        </form>
+    </mat-card>
+</div>

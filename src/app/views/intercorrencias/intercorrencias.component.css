@@ -1,0 +1,59 @@
+form{
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.title{
+    padding: 5px
+};
+
+
+.log{
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    margin: 10px 0px 10px 0px;
+}
+
+a{
+    cursor: pointer;
+}
+
+.diversos{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 15px;
+}
+
+.sintomas{
+    display: flex;
+    justify-content: space-between;
+}
+
+.divisao{
+    padding: 15px 0px 0px 0px;
+}
+
+span{
+    font-weight: 550;
+}
+
+.check{
+    padding-top: 8px;
+    padding-left: 8px;
+}
+
+.sintomas{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.voltar{
+    margin-bottom: 35px;
+}

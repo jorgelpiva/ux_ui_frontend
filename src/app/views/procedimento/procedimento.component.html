@@ -1,0 +1,39 @@
+<div id="teste">
+    <mat-card class="log">
+        <mat-card-title class="title">Procedimento</mat-card-title>
+        <form>
+
+            <mat-form-field>
+                <input matInput placeholder="Nome do Hospital" id="hospital">
+            </mat-form-field>
+
+            <mat-form-field>
+                <input matInput placeholder="Nome do Medico" id="medico">
+            </mat-form-field>
+
+            <mat-form-field>
+                <input matInput placeholder="CRM" id="crm">
+            </mat-form-field>
+
+            <mat-form-field>
+                <input type="date" matInput placeholder="Data de Realização" id="realizacao">
+            </mat-form-field>
+
+            <span>Como foi realizado?</span>
+            <div class="sexo">
+                <mat-checkbox>Particular
+                </mat-checkbox>
+                <mat-checkbox>Plano de Saúde
+                </mat-checkbox>
+            </div>
+
+            
+            <button routerLink="/menu" mat-raised-button (click)="voltar()" color="primary">
+                Salvar
+            </button>
+            <button class="voltar" routerLink="/menu" mat-raised-button (click)="voltar()" color="warn">
+                Voltar
+            </button>
+        </form>
+    </mat-card>
+    </div>

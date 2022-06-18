@@ -1,0 +1,87 @@
+<div id="teste">
+    <mat-card class="log">
+        <mat-card-title class="title">Intercorrências</mat-card-title>
+        <form>            
+            
+            <span class="divisao">Você teve sintomas antes de realizar o CPRE?</span>
+            <div class="sintomas">
+                <mat-checkbox class="check">Sim
+                </mat-checkbox>
+                <mat-checkbox class="check">Não
+                </mat-checkbox>
+            </div>
+
+            <span class="divisao">Dentre este quais você teve?</span>
+            <div class="sintomas">
+                <mat-checkbox class="check">Enjôos/Vômitos
+                </mat-checkbox>
+                <mat-checkbox class="check">Mal Estar
+                </mat-checkbox>
+                <mat-checkbox class="check">Suor
+                </mat-checkbox>
+                <mat-checkbox class="check">Não tive nada
+                </mat-checkbox>
+                <mat-checkbox class="check">Outros
+                </mat-checkbox>
+            </div>
+
+
+            <mat-form-field class="divisao">
+                <input matInput placeholder="Observações" id="obs">
+            </mat-form-field>
+
+            <span class="divisao">Você sentiu dores no obdômem?</span>
+            <div class="sintomas">
+                <mat-checkbox class="check">Sim, do lado esquerdo
+                </mat-checkbox>
+                <mat-checkbox class="check">Sim, do lado direito
+                </mat-checkbox>
+                <mat-checkbox class="check">Não senti nada
+                </mat-checkbox>
+            </div>
+
+            <span class="divisao">Após o procedimento, os sintomas persistiram?</span>
+            <div class="sintomas">
+                <mat-checkbox class="check">Sim
+                </mat-checkbox>
+                <mat-checkbox class="check">Não
+                </mat-checkbox>
+            </div>
+
+            <mat-form-field class="divisao">
+                <input matInput placeholder="Se sim, Quais?" id="quais-sintomas">
+            </mat-form-field>
+
+            <span class="divisao">Após 15 dias do procedimento, surgiu algum novo sintoma?</span>
+            <div class="sintomas">
+                <mat-checkbox class="check">Sim
+                </mat-checkbox>
+                <mat-checkbox class="check">Não
+                </mat-checkbox>
+            </div>
+
+            <span class="divisao">Dentre estes, quais você teve?</span>
+            <div class="sintomas">
+                <mat-checkbox class="check">Inflamação no local
+                </mat-checkbox>
+                <mat-checkbox class="check">Hemorragia
+                </mat-checkbox>
+                <mat-checkbox class="check">Infecção
+                </mat-checkbox>
+                <mat-checkbox class="check">Outros
+                </mat-checkbox>
+            </div>
+
+            <mat-form-field class="divisao">
+                <input matInput placeholder="Observações" id="obs1">
+            </mat-form-field>
+            
+            <button routerLink="/menu" mat-raised-button (click)="voltar()" color="primary">
+                Salvar
+            </button>
+            <button class="voltar" routerLink="/menu" mat-raised-button (click)="voltar()" color="warn">
+                Voltar
+            </button>
+        </form>
+    </mat-card>
+    </div>

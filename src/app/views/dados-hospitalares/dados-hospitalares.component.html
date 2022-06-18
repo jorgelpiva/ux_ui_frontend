@@ -1,0 +1,114 @@
+<div id="teste">
+    <mat-card class="log">
+        <mat-card-title class="title">Dados Hospitalares</mat-card-title>
+        <form>
+
+            <span>Já foi submetido anteriormente ao procedimento do CPRE?</span>
+            <div class="pergunta">
+                <mat-checkbox class="check" id="cpreyes">Sim
+                </mat-checkbox>
+                <mat-checkbox class="check" id="cpreno">Não
+                </mat-checkbox>
+            </div>
+
+            <span></span>
+            <mat-form-field>
+                <input type="date" matInput placeholder="Qual a data da realização" id="dtreal">
+            </mat-form-field>
+
+            <span>Já foi submetido à alguma cirurgia bariátrica?</span>
+            <div class="pergunta">
+                <mat-checkbox class="check" id="baryes">Sim
+                </mat-checkbox>
+                <mat-checkbox class="check" id="barno">Não
+                </mat-checkbox>
+            </div>
+
+            <span>Faz uso de algum medicamento contínuo?</span>
+            <div class="pergunta">
+                <mat-checkbox class="check" id="medcontyes">Sim
+                </mat-checkbox>
+                <mat-checkbox class="check" id="medcontno">Não
+                </mat-checkbox>
+            </div>
+
+            <span></span>
+            <mat-form-field>
+                <input matInput placeholder="Se sim Quais?" id="medcontdesc">
+            </mat-form-field>
+
+            <span>Faz uso de bebidas alcoólicas?</span>
+            <div class="pergunta">
+                <mat-checkbox class="check" id="bebyes">Sim
+                </mat-checkbox>
+                <mat-checkbox class="check" id="bebno">Não
+                </mat-checkbox>
+            </div>
+
+            <span>Com qual frequência?</span>
+            <div class="pergunta">
+                <mat-checkbox class="check" id="bebedia">Diariamente
+                </mat-checkbox>
+                <mat-checkbox class="check" id="bebesol">Socialmente
+                </mat-checkbox>
+                <mat-checkbox class="check" id="bebesem">Semanalmente
+                </mat-checkbox>
+                <mat-checkbox class="check" id="beberar">Raramente
+                </mat-checkbox>
+            </div>
+
+            <span>Você Fuma?</span>
+            <div class="pergunta">
+                <mat-checkbox class="check" id="fumayes">Sim
+                </mat-checkbox>
+                <mat-checkbox class="check" id="fumano">Não
+                </mat-checkbox>
+            </div>
+
+            <span></span>
+            <mat-form-field>
+                <input matInput placeholder="Informe a Quantidade de Cigarros por dia" id="qtdCigarros">
+            </mat-form-field>
+
+            <span></span>
+            <mat-form-field>
+                <input matInput placeholder="Há quanto tempo você fuma (anos)" id="qtdCigarros">
+            </mat-form-field>
+
+            <span>Alguma Doença Pré-existente?</span>
+            <div class="pergunta">
+                <mat-checkbox class="check" id="preexyes">Sim
+                </mat-checkbox>
+                <mat-checkbox class="check" id="preexno">Não
+                </mat-checkbox>
+            </div>
+
+            <span>Qual Dentre Essas?</span>
+            <div class="pergunta">
+                <mat-checkbox class="check" id="preexyes">Diabetes
+                </mat-checkbox>
+                <mat-checkbox class="check" id="preexno">Colesterol Alto
+                </mat-checkbox>
+                <mat-checkbox class="check" id="preexno">Hipertensão
+                </mat-checkbox>
+                <mat-checkbox class="check" id="preexno">OUtras
+                </mat-checkbox>
+            </div>
+
+            <span>Algum histórico familar de Cálculos Biliares?</span>
+            <div class="pergunta">
+                <mat-checkbox class="check" id="caclbilyes">Sim
+                </mat-checkbox>
+                <mat-checkbox class="check" id="caclbilno">Não
+                </mat-checkbox>
+            </div>
+            
+            <button routerLink="/menu" mat-raised-button (click)="voltar()" color="primary">
+                Salvar
+            </button>
+            <button class="voltar" routerLink="/menu" mat-raised-button (click)="voltar()" color="warn">
+                Voltar
+            </button>
+        </form>
+    </mat-card>
+</div>

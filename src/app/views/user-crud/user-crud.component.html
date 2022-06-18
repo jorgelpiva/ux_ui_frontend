@@ -1,0 +1,64 @@
+<div id="teste">
+    <mat-card class="log">
+        <mat-card-title class="title">Cadastro</mat-card-title>
+        <form>
+
+            <mat-form-field>
+                <input matInput placeholder="Nome" id="name">
+            </mat-form-field>
+
+            <mat-form-field>
+                <input matInput placeholder="CPF" id="cpf">
+            </mat-form-field>
+
+            <mat-form-field>
+                <input type="date" matInput placeholder="Data de Nascimento" id="nascimento">
+            </mat-form-field>
+
+            <span>Sexo</span>
+            <div class="sexo">
+                <mat-checkbox>Masculino
+                </mat-checkbox>
+                <mat-checkbox>Feminino
+                </mat-checkbox>
+            </div>
+
+            <mat-form-field>
+                <input type="phone" matInput placeholder="Telefone" id="fone">
+            </mat-form-field>
+            
+            <mat-form-field>
+                <input matInput placeholder="E-mail" id="email">
+            </mat-form-field>
+
+            <span>Escolaridade
+            <mat-select>
+                <mat-option value="one">Ensino Médio Incompleto</mat-option>
+                <mat-option value="two">Ensino Médio Completo</mat-option>
+                <mat-option value="three">Superior Incompleto</mat-option>
+                <mat-option value="four">Superior Completo</mat-option>
+                <mat-option value="five">Pós Graduação</mat-option>
+            </mat-select>
+            </span>
+
+            <mat-form-field>
+                <input type="text"matInput placeholder="Peso" id="peso">
+            </mat-form-field>
+            
+            <mat-form-field>
+                <input type="text"matInput placeholder="Altura" id="altura">
+            </mat-form-field>
+            
+            <mat-form-field>
+                <input type="text"matInput placeholder="Observação" id="obs">
+            </mat-form-field>
+
+            <button routerLink="/login" mat-raised-button (click)="voltar()" color="primary">
+                Salvar
+            </button>
+            <button class="voltar" routerLink="/" mat-raised-button (click)="voltar()" color="warn">
+                Voltar
+            </button>
+        </form>
+    </mat-card>
+    </div>

@@ -1,0 +1,51 @@
+form{
+
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.title{
+    padding: 20px
+};
+
+
+.log{
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    margin: 10px 0px 10px 0px;
+}
+
+a{
+    cursor: pointer;
+}
+
+.diversos{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 15px;
+}
+
+.teste{
+    padding: 20px;
+    align-items: center;
+}
+
+.pergunta{
+    display: flex;
+    justify-content: space-between;
+}
+
+span {
+    padding-top: 20px;
+}
+
+.voltar{
+    margin-bottom: 35px;
+}

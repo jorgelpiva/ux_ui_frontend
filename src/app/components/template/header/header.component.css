@@ -1,0 +1,36 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.header .logo{
+    max-height: 48px;
+}
+
+.esquerda {
+    display: flex;
+}
+
+.title-group{
+    padding-top: 8px;
+}
+
+.direita {
+    display: flex;
+    padding-right: 15px;
+}
+
+.direita i {
+    padding: 5px;
+}
+
+.btn-menu, .btn-login, .logo{
+    cursor: pointer;
+}

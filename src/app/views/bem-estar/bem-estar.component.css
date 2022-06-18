@@ -1,0 +1,21 @@
+form{
+
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+button{
+    margin: 10px 0px 10px 0px;
+}
+
+
+.card{
+    margin-top: 10px;
+}
+
+.voltar{
+    margin-bottom: 35px;
+}

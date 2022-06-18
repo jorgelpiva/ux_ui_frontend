@@ -1,0 +1,41 @@
+<div id="teste">
+    <mat-card class="log">
+        <mat-card-title class="title">Pré-Cirúrgico</mat-card-title>
+        <form>
+            <span>Você realizou algum acompanhamento médico Pré-Cirúrgico</span>
+            <div class="pergunta">
+                <mat-checkbox>Sim
+                </mat-checkbox>
+                <mat-checkbox>Não
+                </mat-checkbox>
+            </div>
+
+            <span>Quais destes exames Pré-Cirúrgicos você realizou?</span>
+            <div class="pergunta">
+                <mat-checkbox>Sangue
+                </mat-checkbox>
+                <mat-checkbox>Imagem
+                </mat-checkbox>
+                <mat-checkbox>Outros
+                </mat-checkbox>
+            </div>
+
+            <span></span>
+            <mat-form-field>
+                <input matInput placeholder="Observações:" id="obs">
+            </mat-form-field>
+
+            <span></span>
+            <mat-form-field>
+                <input matInput placeholder="Possuí resultados anteriores?:" id="resultadoant">
+            </mat-form-field>
+            
+            <button routerLink="/menu" mat-raised-button (click)="voltar()" color="primary">
+                Salvar
+            </button>
+            <button class="voltar" routerLink="/menu" mat-raised-button (click)="voltar()" color="warn">
+                Voltar
+            </button>
+        </form>
+    </mat-card>
+    </div>

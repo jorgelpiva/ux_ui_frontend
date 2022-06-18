@@ -1,0 +1,38 @@
+<div id="teste">
+<mat-card class="log">
+    <mat-card-title class="title">Login</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="email" id="name">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput type="password" placeholder="senha" id="senha">
+        </mat-form-field>
+        <div class="diversos">
+            <span routerLink="/esqueci-senha">
+                <a class="v-middle">
+                    <i class="material-icons v-middle">
+                        help
+                    </i>
+                    Esqueceu a senha?
+                </a>
+            </span>
+
+            <span routerLink="/cadastro">
+                <a class="v-middle">
+                    <i class="material-icons v-middle">
+                        add
+                    </i>
+                    Cadastre-se
+                </a>
+            </span>
+        </div>
+        <button routerLink="/menu" mat-raised-button (click)="voltar()" color="primary">
+            Logar
+        </button>
+        <button routerLink="/menu" mat-raised-button (click)="voltar()" color="warn">
+            Voltar
+        </button>
+    </form>
+</mat-card>
+</div>
